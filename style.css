@@ -19,14 +19,14 @@ main {
     margin: auto;
 }
 
-.button {
+.btn {
     background-color: black;
     color: white;
     padding: 5px;
     text-align: center;
 }
 
-.button:hover {
+.btn:hover {
     background-color: yellow;
     color: black;
     font-weight: 700;
@@ -48,7 +48,6 @@ main {
     background-color: white;
     padding: 7px;
     border-radius: 5px;
-    box-sizing: border-box;
     box-shadow: 2px 2px 3px rgba(255, 255, 255, 0.555);
 }
 
@@ -85,6 +84,11 @@ h4 {
 
 img {
     border: 1px solid black;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
