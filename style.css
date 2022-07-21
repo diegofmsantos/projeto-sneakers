@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    height: 90px;
+}
+
+main {
+    max-width: 1000px;
+    min-width: 350px;
+    margin: auto;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: yellow;
+    color: black;
+    font-weight: 700;
+}
+
+.cabeçalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 50px;
+    align-items: center;
+}
+
+.link-cabeçalho {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: white;
+    padding: 7px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 3px rgba(255, 255, 255, 0.555);
+}
+
+.buscar-cabeçalho {
+    padding: 5px;
+    margin-left: 400px;
+}
+
+.link-cabeçalho:hover {
+    border: 2px solid black;
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px 5px black;
+    transition: transform 0.2s, 0.2s;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    line-height: 20px;
+}
+
+div > p {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+img {
+    border: 1px solid black;
+}
+
+footer {
+    height: 70px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.rodapé-inicial {
+    display: flex;
+    margin: 5px;
+    margin-left: 10px;
+    align-items: center;
+    gap: 10px;
+}
+
+.rodapé {
+    display: flex;
+    gap: 10px;
+    margin-left: 675px;
+    align-items: center;
+}
+
+.rodapé-final {
+    margin: 5px;
+    text-align: center;
+    align-items: center;
+}
+
+
+
