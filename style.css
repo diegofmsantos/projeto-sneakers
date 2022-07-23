@@ -21,24 +21,23 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
     margin-left: 10px;
 }
 
 .link-cabeçalho {
-    color: black;
-    font-weight: 700;
-    font-size: 14px;
+    color: white;
+    font-weight: 600;
     text-decoration: none;
-    background-color: white;
-    padding: 7px;
-    border-radius: 5px;
-    box-shadow: 2px 2px 3px rgba(255, 255, 255, 0.555);
+    margin-top: 10px;
+    margin-left: 20px;
+   
 }
 
 .link-cabeçalho:hover {
-    background-color: rgba(102, 110, 138, 0.911);
+    color: yellow
 }
 
 .container {
@@ -60,7 +59,7 @@ main {
 }
 
 .btn:hover {
-    background-color: rgba(0, 60, 255, 0.616);
+    background-color: rgba(229, 255, 0, 0.616);
     color: black;
     font-weight: 700;
 }
@@ -83,22 +82,13 @@ img {
 }
 
 footer {
-    height: 130px;
+    height: 80px;
     background-color: black;
     color: white;
     padding: 10px;
 }
 
-.rodapé-inicial {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 5px;
-    align-items: center;
-    gap: 20px;
-}
-
-.rodapé-médio {
+.rodapé {
     display: flex;
     flex-direction: row;
     justify-content: center;
