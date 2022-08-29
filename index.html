@@ -5,18 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nike</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="imagens/nike.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
-        <div class="cabeçalho">
-            <img class="link-cabeçalho1" src="imagens/logo-nike.png" alt="Logo-Nike">
-            <a class="link-cabeçalho" href="#">Masculino</a>
-            <a class="link-cabeçalho" href="#">Feminino</a>
-            <a class="link-cabeçalho" href="#">Infantil</a>
-            <a class="link-cabeçalho" href="#">Lançamento</a>
-        </div>
+        <img class="link-cabeçalho1" src="imagens/logo-nike.png" alt="Logo-Nike">
+            <nav id="menuBurguer">
+                <ul class="cabeçalho">
+                    <li><a class="link-cabeçalho" href="#">Masculino</a></li>
+                    <li><a class="link-cabeçalho" href="#">Feminino</a></li>
+                    <li><a class="link-cabeçalho" href="#">Infantil</a></li>
+                    <li><a class="link-cabeçalho" href="#">Lançamento</a></li>
+                </ul>
+            </nav>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">
+            menu
+        </span>
     </header>
 
     <main>
@@ -90,5 +96,23 @@
         <p class="rodapé-final"> Brasil | Política de Privacidade | Termos de Uso | &copy; 2022 Nike.</p>
     </footer>
     
+    <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 700) {
+                menuBurguer.style.display = 'block'
+            } else {
+                menuBurguer.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (menuBurguer.style.display == 'none') {
+                menuBurguer.style.display = 'block'
+            } else {
+                menuBurguer.style.display = 'none'
+            }
+        }
+    </script>
 </body>
 </html>

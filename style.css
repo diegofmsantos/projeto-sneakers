@@ -15,7 +15,23 @@ header {
     background-color: black;
     font-family: 'Oswald', sans-serif;
     font-size: 22px;
-    height: 70px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+#burguer {
+    text-align: center;
+    color: white;
+    width: 40px;
+    height: 25px;
+    display: none;
+    border-radius: 50%;
 }
 
 main {
@@ -31,6 +47,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: 50px;
+    color: white;
 }
 
 .link-cabeçalho1 {
@@ -114,5 +131,26 @@ footer {
     margin-top: 5px;
 }
 
+@media screen and (max-width:700px) {
+    
+    #burguer {
+        display: block;
+        cursor: pointer;
+        background-color: white;
+        color: black;
+    }
 
+    header {
+        height: auto;
+    }
 
+    nav {
+        display: none;
+    }
+
+    .cabeçalho {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
