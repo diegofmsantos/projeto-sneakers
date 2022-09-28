@@ -11,18 +11,20 @@
 </head>
 <body onresize="mudouTamanho()">
     <header>
-        <img class="link-cabeçalho1" src="imagens/logo-nike.png" alt="Logo-Nike">
-            <nav id="menuBurguer">
-                <ul class="cabeçalho">
+        <div class="header">
+            <img class="link-cabeçalho1" src="imagens/logo-nike.png" alt="Logo-Nike">
+            <nav id="menu">
+                <ul>
                     <li><a class="link-cabeçalho" href="#">Masculino</a></li>
                     <li><a class="link-cabeçalho" href="#">Feminino</a></li>
                     <li><a class="link-cabeçalho" href="#">Infantil</a></li>
                     <li><a class="link-cabeçalho" href="#">Lançamento</a></li>
                 </ul>
             </nav>
-        <span id="burguer" class="material-icons" onclick="clickMenu()">
-            menu
-        </span>
+            <span id="burguer" class="material-icons" onclick="clickMenu()">
+                menu
+            </span>
+        </div>
     </header>
 
     <main>
@@ -100,17 +102,17 @@
 
         function mudouTamanho() {
             if (window.innerWidth >= 700) {
-                menuBurguer.style.display = 'block'
+                menu.style.display = 'block'
             } else {
-                menuBurguer.style.display = 'none'
+                menu.style.display = 'none'
             }
         }
 
         function clickMenu() {
-            if (menuBurguer.style.display == 'none') {
-                menuBurguer.style.display = 'block'
+            if (menu.style.display == 'none') {
+                menu.style.display = 'block'
             } else {
-                menuBurguer.style.display = 'none'
+                menu.style.display = 'none'
             }
         }
     </script>
