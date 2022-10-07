@@ -42,8 +42,10 @@ nav ul li a {
     color: #f7f7f7;
 }
 
+nav ul li:hover, 
 nav ul li a:hover {
-    color: rgb(240, 243, 74);
+    color: #000;
+    background-color: #000;
 }
 
 #burguer {
@@ -57,7 +59,6 @@ nav ul li a:hover {
 
 main {
     max-width: 1000px;
-    min-width: 380px;
     font-family: 'Oswald', sans-serif;
     margin: auto;
 }
@@ -161,16 +162,20 @@ footer {
         color: #F7F7F7;
     }
 
-    nav ul li:hover,
-    nav ul li a:hover {
-        background-color: rgb(233, 235, 132);
-        color: #000;
+    nav ul li:hover a,
+    nav ul li:hover {
+        background-color: #000;
+        color: #FFF;
     }
 
     .link-cabeçalho {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .rodapé-final {
+        font-size: 13px;
     }
 
 }
